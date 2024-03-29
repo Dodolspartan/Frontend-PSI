@@ -1,52 +1,36 @@
-// Navbar Fixed Scroll
-let prevScrollpos = window.pageYOffset;
-let navbar = document.getElementById("navbar");
-let navbarHeight = navbar.clientHeight;
-let isScrollingUp = false;
+function items() {
+  var reveals = document.querySelectorAll(".Element-card-items");
 
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
 
-  if (prevScrollpos > currentScrollPos) {
-    navbar.style.top = "0";
-    isScrollingUp = true;
-  } else {
-    if (isScrollingUp && currentScrollPos < navbarHeight) {
-      navbar.style.top = "0";
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
     } else {
-      navbar.style.top = `-${navbarHeight}px`;
-      isScrollingUp = false;
+      reveals[i].classList.remove("active");
     }
   }
-  prevScrollpos = currentScrollPos;
-};
-// Slider
-const next = document.querySelector(".right");
-const prev = document.querySelector(".left");
-const slides = document.querySelectorAll(".slide");
-
-let index = 0;
-slider(index);
-
-function slider(index) {
-  slides.forEach((slide) => {
-    slide.style.display = "none";
-  });
-  slides[index].style.display = "flex";
 }
 
-next.addEventListener("click", (e) => {
-  index++;
-  if (index > slides.length - 1) {
-    index = 0;
-  }
-  slider(index);
-});
+window.addEventListener("scroll", items);
+//
 
-prev.addEventListener("click", () => {
-  index--;
-  if (index < 0) {
-    index = slides.length - 1;
+function hero() {
+  var reveals = document.querySelectorAll(".Element-herosection");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 200;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
   }
-  slider(index);
-});
+}
+
+window.addEventListener("scroll", hero);

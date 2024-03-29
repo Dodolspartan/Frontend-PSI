@@ -81,6 +81,18 @@
     line-height: 28px;
 }
 
+.Element-card-items {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.Element-card-items.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* Element herosection */
 .Element-herosection {
     padding: 56px 0;
@@ -93,6 +105,18 @@
 
 .Element-herosection .container-sm {
     padding: 56px 0;
+}
+
+.Element-herosection {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.Element-herosection.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* Element-about-sipol */
@@ -224,6 +248,13 @@
     text-decoration: none;
 }
 
+.Element-work-steps .btn-action:hover {
+    background: none;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    transition: 1s;
+}
+
 /* Section Application */
 .Element-application-jobs {
     padding: 56px 0;
@@ -307,7 +338,10 @@
 .Element-application-jobs .element-next a:hover {
     background-color: var(--biru-d);
     color: var(--text-w);
+    transition: 1s;
 }
+
+/* Section they said */
 
 /* Footer */
 .Element-footer {
