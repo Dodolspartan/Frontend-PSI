@@ -62,12 +62,18 @@
     border-radius: 16px;
 }
 
+.Element-card-items .row .card-items:hover {
+    box-shadow: 0px 10px 35px -3px rgba(0, 0, 0, 0.055);
+    cursor: pointer;
+}
+
 .Element-card-items .row .card-items .box-items {
     padding: 20px;
     margin: 0 60px;
     background-color: var(--biru-b);
     border-radius: 7px;
 }
+
 
 .Element-card-items .row .card-items .fw-reguler {
     font-weight: 400;
@@ -297,4 +303,8 @@
     margin-top: 56px;
     min-height: 416px;
     background-color: var(--biru-d);
+}
+
+.Element-footer .container {
+    padding: 56px 0;
 }
