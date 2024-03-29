@@ -8,6 +8,8 @@
     --biru-b: #F2FAFF;
     --biru-s: #94D6FF;
     --orange-c: #FFEDD5;
+    --hijau-b: #DCFCE7;
+    --orange-i: #f974167a;
 }
 
 * {
@@ -111,6 +113,11 @@
     border-radius: 14px;
 }
 
+.Element-fitur-sipol .row .card-fitur-sipool-items .col-1 img {
+    position: relative;
+    top: 14%;
+}
+
 .Element-fitur-sipol .row .card-fitur-sipool-items-m {
     padding: 24px;
     min-height: 250px;
@@ -128,8 +135,10 @@
 /* Section Steps */
 .Element-work-steps {
     padding: 56px 0;
-    background-repeat: no-repeat;
     background-image: url(../assets/image/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Element-work-steps .container {
@@ -202,4 +211,90 @@
 .Element-application-jobs {
     padding: 56px 0;
     min-height: 964px;
+}
+
+.Element-application-jobs .element-items-card .row .card-body {
+    padding: 12px;
+    border: 1px solid var(--biru-b);
+    border-radius: 16px;
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-image img {
+    width: 100%;
+}
+
+.Element-application-jobs .element-items-card .row .card-body:hover {
+    box-shadow: 0px 10px 35px -3px rgba(0, 0, 0, 0.055);
+    border: 2px solid var(--biru-b);
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-items-bagde {
+    display: flex;
+    padding: 8px 4px;
+    margin: 20px 0px 10px 0px;
+    background-color: var(--hijau-b);
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-items-bagde span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-title-heading-card h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-title-heading-card span {
+    font-size: 12px;
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-content .col-10 p {
+    font-size: 12px;
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-content .col-12 h6 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-content .col-12 a {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.Element-application-jobs .element-items-card .row .card-body .card-content .col-12 a:hover {
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-w);
+    text-decoration: none;
+    background-color: var(--orange);
+    border-radius: 4px;
+}
+
+.Element-application-jobs .element-next a {
+    padding: 12px 36px;
+    border: 2px solid var(--biru-d);
+    text-decoration: none;
+    border-radius: 8px;
+    color: var(--biru-d);
+}
+
+.Element-application-jobs .element-next a:hover {
+    background-color: var(--biru-d);
+    color: var(--text-w);
+}
+
+/* Footer */
+.Element-footer {
+    margin-top: 56px;
+    min-height: 416px;
+    background-color: var(--biru-d);
 }
