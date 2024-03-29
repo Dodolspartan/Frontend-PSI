@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --orange: #F97316;
+    --biru-d: #00314F;
+    --biru-n: #00314fb4;
+    --text-w: #ffff;
+    --biru-b: #F2FAFF;
+    --biru-s: #94D6FF;
+    --orange-c: #FFEDD5;
+}
+
+* {
+    box-sizing: 0;
+    font-family: inter;
+}
+
+/* Navbar Section */
+.Element-nav-items {
+    padding: 24px 0;
+    background-color: var(--biru-b);
+    min-height: 100vh;
+}
+
+.Element-nav-items .navbar {
+    display: flex;
+    margin: 24px 90px;
+    padding: 20px 24px;
+    background: var(--biru-n);
+    border-radius: 16px;
+}
+
+
+.Element-nav-items .navbar .link-pages {
+    padding: 12px;
+    text-decoration: none;
+    color: var(--text-w);
+    font-size: 16px;
+}
+
+.Element-nav-items .navbar .link-btn {
+    padding: 12px 24px;
+    background: var(--orange);
+    text-decoration: none;
+    color: var(--text-w);
+    opacity: 100%;
+    border-radius: 14px;
+    font-size: 16px;
+
+}
+
+/* Card Items */
+.Element-card-items {
+    padding: 56px 0;
+}
+
+.Element-card-items .row .card-items {
+    padding: 24px;
+    border: 1px solid var(--biru-b);
+    border-radius: 16px;
+}
+
+.Element-card-items .row .card-items .box-items {
+    padding: 20px;
+    margin: 0 60px;
+    background-color: var(--biru-b);
+    border-radius: 7px;
+}
+
+.Element-card-items .row .card-items .fw-reguler {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Element herosection */
+.Element-herosection {
+    padding: 56px 0;
+}
+
+.Element-herosection .container .bagde {
+    background-color: var(--orange);
+    color: var(--text-w);
+}
+
+.Element-herosection .container-sm {
+    padding: 56px 0;
+}
+
+/* Element-about-sipol */
+.Element-about-sipol {
+    margin: 56px 0;
+}
+
+.Element-about-sipol .Element-sipol-tentang-content {
+    padding: 56px 120px;
+    background-color: var(--biru-d);
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+/* Fitur SIPOL */
+.Element-fitur-sipol {
+    padding: 56px 0;
+}
+
+.Element-fitur-sipol .row .card-fitur-sipool-items {
+    padding: 24px;
+    min-height: 250px;
+    background-color: var(--biru-b);
+    border-radius: 14px;
+}
+
+.Element-fitur-sipol .row .card-fitur-sipool-items-m {
+    padding: 24px;
+    min-height: 250px;
+    background-color: var(--orange-c);
+    border-radius: 14px;
+}
+
+.Element-fitur-sipol .row .card-fitur-sipool-items-r {
+    padding: 24px;
+    min-height: 516px;
+    background-color: var(--biru-b);
+    border-radius: 14px;
+}
+
+/* Section Steps */
+.Element-work-steps {
+    padding: 56px 0;
+    background-repeat: no-repeat;
+    background-image: url(../assets/image/background.png);
+}
+
+.Element-work-steps .container {
+    padding: 130px 0;
+}
+
+.Element-work-steps .steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.Element-work-steps .step-button {
+    margin: 10px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--biru-s);
+}
+
+.Element-work-steps .step-button[aria-expanded="true"] {
+    width: 60px;
+    height: 60px;
+    background-color: var(--biru-b);
+    color: #fff;
+}
+
+.Element-work-steps .done {
+    background-color: var(--biru-b);
+    color: #fff;
+}
+
+.Element-work-steps .step-item {
+    z-index: 10;
+    text-align: center;
+}
+
+.Element-work-steps #progress {
+    -webkit-appearance: none;
+    position: absolute;
+    width: 90%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 55px;
+    margin-bottom: 18px;
+    color: var(--biru-b);
+}
+
+.Element-work-steps #progress::-webkit-progress-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--biru-s);
+    height: 5px;
+    width: 100%;
+}
+
+.Element-work-steps .btn-action {
+    padding: 12px;
+    color: var(--text-w);
+    background: var(--orange);
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+/* Section Application */
+.Element-application-jobs {
+    padding: 56px 0;
+    min-height: 964px;
+}
