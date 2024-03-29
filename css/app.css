@@ -301,7 +301,7 @@
 /* Footer */
 .Element-footer {
     margin-top: 56px;
-    min-height: 416px;
+    min-height: 350px;
     background-color: var(--biru-d);
 }
 
