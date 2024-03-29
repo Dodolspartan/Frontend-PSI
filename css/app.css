@@ -51,6 +51,61 @@
 
 }
 
+.Element-nav-items .carousel-items {
+    display: flex;
+    padding: 56px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Element-nav-items .carousel-items .carousel-items-left .text-heading h6 {
+    font-size: 24px;
+    color: var(--biru-d);
+}
+
+.Element-nav-items .carousel-items .carousel-items-left .carousel-text span {
+    font-size: 18px;
+}
+
+.Element-nav-items .carousel-items .carousel-items-left .carousel-link-button a {
+    padding: 12px;
+    background-color: var(--orange);
+    font-size: 16px;
+    color: var(--text-w);
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.Element-nav-items .carousel-item .carousel-items-left .carousel-link-button a {
+    padding: 12px;
+    background-color: var(--orange);
+    font-size: 16px;
+    color: var(--text-w);
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.Element-nav-items .carousel-items .carousel-items-left .carousel-link-button a:hover {
+    background: none;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    transition: 1s;
+}
+
+.Element-nav-items .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: var(--biru-s);
+}
+
+.Element-nav-items .carousel-items .carousel-items-left .carousel-title-heading h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--biru-d);
+}
+
+.Element-nav-items .carousel-items .items-right-image img {
+    width: 600px;
+}
+
 /* Card Items */
 .Element-card-items {
     padding: 56px 0;
