@@ -113,18 +113,29 @@
 }
 
 .Element-fitur-sipol .row .card-fitur-sipool-items {
-    padding: 24px;
-    min-height: 250px;
+    padding: 24px 0px 0px 24px;
+    min-height: 200px;
     background-color: var(--biru-b);
     border-radius: 14px;
 }
 
-.Element-fitur-sipol .row .card-fitur-sipool-items .col-1 img {
-    position: relative;
-    top: 14%;
+.Element-fitur-sipol .row .card-fitur-sipool-items .col-1 {
+    background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
+    width: 195px;
+    height: 200px;
+    background-image: cover;
+    object-fit: contain;
 }
 
-.Element-fitur-sipol .row .card-fitur-sipool-items-m {
+.card-fitur-sipool-items .row .card-fitur-sipool-item .col-2 {
+    background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
+    width: 195px;
+    height: 200px;
+    background-image: cover;
+    object-fit: contain;
+}
+
+.Element-fitur-sipol .row .card-fitur-sipool-item {
     padding: 24px;
     min-height: 250px;
     background-color: var(--orange-c);

@@ -20,3 +20,33 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+// Slider
+const next = document.querySelector(".right");
+const prev = document.querySelector(".left");
+const slides = document.querySelectorAll(".slide");
+
+let index = 0;
+slider(index);
+
+function slider(index) {
+  slides.forEach((slide) => {
+    slide.style.display = "none";
+  });
+  slides[index].style.display = "flex";
+}
+
+next.addEventListener("click", (e) => {
+  index++;
+  if (index > slides.length - 1) {
+    index = 0;
+  }
+  slider(index);
+});
+
+prev.addEventListener("click", () => {
+  index--;
+  if (index < 0) {
+    index = slides.length - 1;
+  }
+  slider(index);
+});
