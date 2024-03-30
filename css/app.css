@@ -51,6 +51,18 @@
 
 }
 
+.Element-nav-items .navbar .link-btn:hover {
+    background: none;
+    text-decoration: none;
+    color: var(--orange);
+    opacity: 100%;
+    border-radius: 14px;
+    font-size: 16px;
+    border: 1px solid var(--orange);
+    transition: 1s;
+
+}
+
 .Element-nav-items .carousel-items {
     display: flex;
     padding: 56px;
@@ -191,24 +203,37 @@
     padding: 56px 0;
 }
 
+.Element-fitur-sipol .row .card-fitur-sipool-items h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
 .Element-fitur-sipol .row .card-fitur-sipool-items {
-    padding: 24px 0px 0px 24px;
+    padding: 59px 0px 0px 24px;
     min-height: 200px;
     background-color: var(--biru-b);
     border-radius: 14px;
+    overflow: hidden;
 }
 
 .Element-fitur-sipol .row .card-fitur-sipool-items .col-1 {
+    float: right;
     background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
-    width: 195px;
+    width: 200px;
     height: 200px;
-    background-image: cover;
-    object-fit: contain;
 }
 
-.card-fitur-sipool-items .row .card-fitur-sipool-item .col-2 {
+.Element-fitur-sipol .row .card-fitur-sipool-danger {
+    background-color: var(--orange-i);
+    padding: 59px 0px 0px 24px;
+    min-height: 200px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.Element-fitur-sipol .row .card-fitur-sipool-danger .col-1 {
     background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
-    width: 195px;
+    width: 200px;
     height: 200px;
     background-image: cover;
     object-fit: contain;
@@ -223,7 +248,7 @@
 
 .Element-fitur-sipol .row .card-fitur-sipool-items-r {
     padding: 24px;
-    min-height: 516px;
+    min-height: 545px;
     background-color: var(--biru-b);
     border-radius: 14px;
 }
@@ -298,6 +323,7 @@
     padding: 12px;
     color: var(--text-w);
     background: var(--orange);
+    font-weight: 700px;
     border: none;
     border-radius: 7px;
     text-decoration: none;
@@ -397,6 +423,26 @@
 }
 
 /* Section they said */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Footer */
 .Element-footer {
