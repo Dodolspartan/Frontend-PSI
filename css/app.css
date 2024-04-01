@@ -376,6 +376,10 @@
     min-height: 964px;
 }
 
+.Element-application-jobs .title-heading h1 {
+    font-size: 19px;
+}
+
 .Element-application-jobs .element-items-card .row .card-body {
     padding: 12px;
     border: 1px solid var(--biru-b);
@@ -621,10 +625,18 @@
     .Element-card-items .row .col {}
 
     /* Fitur SIPOOL Section */
+    .Element-fitur-sipol {
+        padding: 0 15px;
+    }
+
     .Element-fitur-sipol .row .card-fitur-sipool-items .col-1 {
         position: relative;
         margin-left: 130px;
         background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
+    }
+
+    .Element-fitur-sipol .row .col-8 {
+        width: 100%;
     }
 
     .Element-fitur-sipol .row .card-fitur-sipool-danger .col-1 {
@@ -702,14 +714,19 @@
     /* Elemenet-they-said */
     .Elemenet-they-said {
         display: flex;
+        padding: 20px 20px;
         width: 100%;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .Elemenet-they-said .title-heading h1 {
+        font-size: 19px;
     }
 
     .Elemenet-they-said .container .mySwiper .swiper-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
     }
 
     .Elemenet-they-said .container .mySwiper .swiper-items .swiper-image img {
