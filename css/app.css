@@ -490,6 +490,13 @@
     align-items: center;
 }
 
+
+.Elemenet-they-said .mySwiper .swiper-button-next {
+    left: calc(50%-10px);
+    color: var(--orange-i);
+}
+
+
 /* wrapper-details-jobs */
 .wrapper-content-left .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
@@ -498,10 +505,11 @@
     background-color: var(--orange-i);
 }
 
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link:hover {
-    border: none;
+.wrapper-content .row .col-4 .wrapper-content-right {
+    background-color: var(--biru-d);
+    min-height: 765px;
 }
+
 
 /* Footer */
 .Element-footer {
@@ -518,12 +526,28 @@
 @media only screen and (max-width: 600px) {
 
     /* Navbar Mobile */
+    .Element-nav-items {
+        min-height: 50vh;
+    }
+
     .Element-nav-items .navbar {
         display: flex;
         margin: 24px 20px;
         padding: 12px 7px;
         background: var(--biru-n);
         border-radius: 8px;
+    }
+
+    .Element-nav-items .navbar .link-btn:hover {
+        padding: 12px 7px;
+        background: none;
+        text-decoration: none;
+        color: var(--orange);
+        border-radius: 8px;
+        font-size: 12px;
+        border: 1px solid var(--orange);
+        transition: none;
+
     }
 
     .Element-nav-items .navbar .navbar-brand {
@@ -590,6 +614,25 @@
         grid: 8px;
     }
 
+    .Element-card-items .row .col {
+        margin: 15px 0;
+    }
+
+    .Element-card-items .row .col {}
+
+    /* Fitur SIPOOL Section */
+    .Element-fitur-sipol .row .card-fitur-sipool-items .col-1 {
+        position: relative;
+        margin-left: 130px;
+        background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
+    }
+
+    .Element-fitur-sipol .row .card-fitur-sipool-danger .col-1 {
+        position: relative;
+        margin-left: 130px;
+        background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
+    }
+
     /* Element-about-sipol */
     .Element-about-sipol {
         margin: auto;
@@ -603,6 +646,7 @@
     }
 
     .Element-fitur-sipol .container .row .col-6 {
+        padding: 10px;
         width: auto;
     }
 
@@ -617,30 +661,66 @@
         border-radius: 16px;
     }
 
+    .Element-fitur-sipol .row .card-fitur-sipool-items-r {
+        min-height: 300px;
+        margin-top: 20px 0;
+    }
+
+    /* Work Space */
+    .Element-work-steps img {
+        width: 100%;
+    }
+
     /* Jobs Section */
     .Element-application-jobs {
-        display: grid;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .Element-application-jobs .element-items-card .row {
+    .Element-application-jobs .container .row {
         display: grid;
-        margin: auto;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .Element-application-jobs .container .element-items-card {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Element-application-jobs .container .element-items-card .row .col-3 {
+        margin: 10px 0;
+    }
+
+    .Element-application-jobs .container .row .col-3 {
+        width: 300px;
+    }
+
+    /* Elemenet-they-said */
+    .Elemenet-they-said {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Elemenet-they-said .container .mySwiper .swiper-items {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .Element-application-jobs .element-items-card .row .card-body {
-        display: grid;
-        margin: auto;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .Element-application-jobs .element-items-card .row .col-3 .card-image img {
-        width: 200px;
+    .Elemenet-they-said .container .mySwiper .swiper-items .swiper-image img {
+        width: 70%;
     }
 
     /* Element Footer */
+    .Element-footer {
+        padding: 20px 0px;
+    }
+
     .Element-footer .container .row {
         padding: 20px;
         display: grid;
@@ -651,5 +731,11 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding: 20px;
+    }
+
+    .Element-footer .container .list-unstyled {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
