@@ -4,12 +4,16 @@
     --orange: #F97316;
     --biru-d: #00314F;
     --biru-n: #00314fb4;
+    --bg-gray: #F5F5F5;
     --text-w: #ffff;
     --biru-b: #F2FAFF;
     --biru-s: #94D6FF;
     --orange-c: #FFEDD5;
     --hijau-b: #DCFCE7;
     --orange-i: #f974167a;
+    --white-b-d: #FAFAFA;
+    --danger-bg: #FEE2E2;
+    --text-danger: #EF4444;
 }
 
 * {
@@ -502,9 +506,18 @@
 
 
 /* wrapper-details-jobs */
+.wrapper-content {
+    background-color: var(--white-b-d);
+}
+
+.wrapper-content .row .wrapper-content-left {
+    border-radius: 16px;
+}
+
 .wrapper-content-left .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
     padding: 12px;
+    outline: none;
     border: none;
     background-color: var(--orange-i);
 }
@@ -514,6 +527,79 @@
     min-height: 765px;
 }
 
+.wrapper-content .row .col-6 .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: none;
+    background: #F97316;
+}
+
+.wrapper-content .content-warning {
+    margin: 20px 0;
+    padding: 12px;
+    background-color: var(--danger-bg);
+    color: var(--text-danger);
+    border-radius: 16px;
+}
+
+/* Detail Jobs Information */
+.Element-information-jobs {
+    padding: 56px 0;
+    background-color: var(--white-b-d);
+}
+
+.Element-information-jobs a {
+    color: var(--biru-d);
+    font-size: 17px;
+}
+
+.Element-information-jobs .container .row {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    background: var(--bg-gray);
+    border-radius: 8px;
+}
+
+.Element-information-jobs .row .card-items-bagde {
+    padding: 8px;
+    margin: 0 12px;
+    background-color: var(--hijau-b);
+    border-radius: 8px;
+}
+
+.Element-information-jobs .row .element-detail-date {
+    display: flex;
+    align-items: center;
+}
+
+.Element-information-jobs .row .col-4 .element-detail-share {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    float: right;
+}
+
+.Element-information-jobs .row .col-4 .element-detail-share input {
+    border: none;
+}
+
+.Element-information-jobs .row .col-4 .element-detail-share input:focus {
+    outline: none;
+}
+
+
+.Element-information-jobs .row .col-4 .element-detail-share button {
+    border: none;
+    background: none;
+}
+
+.Element-information-jobs .row .col-4 .element-detail-share .clipboard-copy {
+    padding: 8px;
+    background: var(--text-w);
+    border-radius: 8px;
+}
 
 /* Footer */
 .Element-footer {
