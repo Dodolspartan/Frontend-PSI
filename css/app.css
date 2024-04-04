@@ -14,6 +14,7 @@
     --white-b-d: #FAFAFA;
     --danger-bg: #FEE2E2;
     --text-danger: #EF4444;
+    --text-green: #22C55E;
 }
 
 * {
@@ -514,17 +515,36 @@
     border-radius: 16px;
 }
 
-.wrapper-content-left .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+.wrapper-content .row .tab-content-items h6 {
+    font-size: 16px;
+}
+
+.wrapper-content-left .nav-tabs .nav-link {
+    color: var(--biru-d);
+}
+
+.wrapper-content-left .nav-tabs .nav-link.active {
     padding: 12px;
     outline: none;
     border: none;
     background-color: var(--orange-i);
+    border-radius: 1px;
+    border-bottom: var(--orange);
+    color: var(--orange);
+}
+
+.wrapper-content-left .nav-tabs.active {
+    border: none;
+}
+
+.wrapper-content-left .nav-tabs .nav-link:hover {
+    border: none;
 }
 
 .wrapper-content .row .col-4 .wrapper-content-right {
     background-color: var(--biru-d);
     min-height: 765px;
+    border-radius: 16px;
 }
 
 .wrapper-content .row .col-6 .nav-tabs .nav-item.show .nav-link,
@@ -533,12 +553,65 @@
     background: #F97316;
 }
 
+.wrapper-content .row .col-6 .nav-tabs .tab-pane {
+    border-bottom: 1px solid var(--biru-d);
+}
+
+.wrapper-content .row .wrapper-content-left .benefit-pekerjaan .card-item {
+    padding: 8px;
+    background-color: var(--hijau-b);
+    border-radius: 8px;
+    color: var(--text-green);
+}
+
+.wrapper-content .row .wrapper-content-left .deskripsi-pekerjaan .card-item {
+    padding: 8px;
+    background-color: var(--orange-i);
+    border-radius: 8px;
+    color: var(--orange);
+}
+
 .wrapper-content .content-warning {
     margin: 20px 0;
     padding: 12px;
     background-color: var(--danger-bg);
     color: var(--text-danger);
     border-radius: 16px;
+}
+
+.wrapper-content .col-4 .wrapper-content-right {
+    padding: 20px;
+}
+
+.wrapper-content .col-4 .wrapper-content-right .wrapper-image img {
+    width: 100%;
+}
+
+.wrapper-content .col-4 .wrapper-content-right .wrapper-salary {
+    padding: 12px;
+    margin: 20px 0;
+    background-color: var(--orange);
+    border-radius: 8px;
+}
+
+.wrapper-content .col-4 .wrapper-content-right .salary-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-content .col-4 .wrapper-content-right .salary-items span {
+    margin-left: 5px;
+    padding: 5px;
+    background: var(--text-w);
+    color: var(--orange);
+    border-radius: 8px;
+}
+
+.wrapper-content .col-4 .wrapper-content-right .text-information span {
+    font-size: 12px;
+    font-weight: 400px;
+    color: var(--text-w);
 }
 
 /* Detail Jobs Information */
@@ -817,6 +890,19 @@
 
     .Elemenet-they-said .container .mySwiper .swiper-items .swiper-image img {
         width: 70%;
+    }
+
+
+    /* Wrapper Content */
+    .wrapper-content .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Wrapper Information */
+    .Element-information-jobs .container .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /* Element Footer */
