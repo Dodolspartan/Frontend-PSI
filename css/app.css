@@ -451,6 +451,43 @@
     border-radius: 4px;
 }
 
+.Element-application-jobs .element-search-items .row {
+    display: flex;
+    padding: 56px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.Element-application-jobs .element-search-items .row .form-control-lg {
+    padding: 11px 20px;
+    font-size: 17px;
+    color: var(--biru-n);
+}
+
+.Element-application-jobs .element-search-items .row .form-select {
+    padding: 11px 20px;
+    font-size: 17px;
+    color: var(--biru-n);
+}
+
+.Element-application-jobs .element-search-items .col-2 button {
+    padding: 11px 30px;
+    background-color: var(--orange);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    color: var(--text-w);
+    border: none;
+}
+
+.Element-application-jobs .element-search-items .col-2 button:hover {
+    font-weight: 600;
+    background: none;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    transition: 1s;
+}
+
 .Element-application-jobs .element-next a {
     padding: 12px 36px;
     border: 2px solid var(--biru-d);
