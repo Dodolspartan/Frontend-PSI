@@ -382,7 +382,7 @@
 }
 
 .Element-application-jobs .title-heading h1 {
-    font-size: 19px;
+    font-size: 48px;
 }
 
 .Element-application-jobs .element-items-card .row .card-body {
@@ -547,6 +547,19 @@
     border-radius: 16px;
 }
 
+.wrapper-content .row .col-4 .wrapper-content-right .items-negara h6 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.wrapper-content .row .col-4 .wrapper-content-right .items-negara span {
+    font-size: 13px;
+}
+
+.wrapper-content .nav-tabs.active {
+    border: none;
+}
+
 .wrapper-content .row .col-6 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
     background-color: none;
@@ -614,6 +627,26 @@
     color: var(--text-w);
 }
 
+.wrapper-content .col-4 .wrapper-content-right .element-button-action {
+    padding: 12px 0;
+    background-color: var(--text-w);
+    border-radius: 8px;
+}
+
+.wrapper-content .col-4 .wrapper-content-right .element-button-action a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--biru-d);
+}
+
+/* Wrapper Register Sipool */
+.wrapper-register-sipol .element-action .row .col-6 button {
+    width: 100%;
+    border: none;
+    padding: 8px 0;
+    border-radius: 8px;
+}
+
 /* Detail Jobs Information */
 .Element-information-jobs {
     padding: 56px 0;
@@ -672,6 +705,19 @@
     padding: 8px;
     background: var(--text-w);
     border-radius: 8px;
+}
+
+/* Wrapper Register Sipool */
+.wrapper-register-sipol {
+    min-height: 100vh;
+    background-color: var(--bg-gray);
+    padding: 56px;
+}
+
+.wrapper-register-sipol .container {
+    padding: 20px;
+    background-color: var(--text-w);
+    border-radius: 16px;
 }
 
 /* Footer */
@@ -868,6 +914,10 @@
 
     .Element-application-jobs .container .row .col-3 {
         width: 350px;
+    }
+
+    .Element-application-jobs .title-heading h1 {
+        font-size: 23px;
     }
 
     /* Elemenet-they-said */
