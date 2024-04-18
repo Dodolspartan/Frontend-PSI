@@ -91,11 +91,7 @@
                         <div class="stepper-item me-5 current" data-kt-stepper-element="nav">
                             <div class="stepper-wrapper d-flex align-items-center">
                                 <div class="stepper-icon w-40px h-40px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="stepper-check bi bi-check2" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
-                                    </svg>
+                                    <i class="stepper-check fas fa-check"></i>
                                     <span class="stepper-number">1</span>
                                 </div>
 
@@ -114,11 +110,7 @@
                         <div class="stepper-item me-5" data-kt-stepper-element="nav">
                             <div class="stepper-wrapper d-flex align-items-center">
                                 <div class="stepper-icon w-40px h-40px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="stepper-check bi bi-check2" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
-                                    </svg>
+                                    <i class="stepper-check fas fa-check"></i>
                                     <span class="stepper-number">2</span>
                                 </div>
 
@@ -138,11 +130,7 @@
                         <div class="stepper-item me-5" data-kt-stepper-element="nav">
                             <div class="stepper-wrapper d-flex align-items-center">
                                 <div class="stepper-icon w-40px h-40px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="stepper-check bi bi-check2" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
-                                    </svg>
+                                    <i class="stepper-check fas fa-check"></i>
                                     <span class="stepper-number">3</span>
                                 </div>
 
@@ -162,11 +150,7 @@
                         <div class="stepper-item me-5" data-kt-stepper-element="nav">
                             <div class="stepper-wrapper d-flex align-items-center">
                                 <div class="stepper-icon w-40px h-40px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="stepper-check bi bi-check2" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
-                                    </svg>
+                                    <i class="stepper-check fas fa-check"></i>
                                     <span class="stepper-number">4</span>
                                 </div>
 
@@ -186,11 +170,7 @@
                         <div class="stepper-item me-5" data-kt-stepper-element="nav">
                             <div class="stepper-wrapper d-flex align-items-center">
                                 <div class="stepper-icon w-40px h-40px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="stepper-check bi bi-check2" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
-                                    </svg>
+                                    <i class="stepper-check fas fa-check"></i>
                                     <span class="stepper-number">5</span>
                                 </div>
 
@@ -404,7 +384,12 @@
                             <!--begin::Actions-->
                             <div class="d-flex flex-stack">
                                 <!--begin::Wrapper-->
-
+                                <div class="me-2">
+                                    <button type="button" class="btn btn-light btn-active-light-primary"
+                                        data-kt-stepper-action="previous">
+                                        Back
+                                    </button>
+                                </div>
                                 <!--end::Wrapper-->
 
                                 <!--begin::Wrapper-->
@@ -426,15 +411,9 @@
                             <!--end::Actions-->
                         </form>
                         <!--end::Form-->
-                        <div class="me-2">
-                            <button type="button" class="btn btn-light btn-active-light-primary"
-                                data-kt-stepper-action="previous">
-                                Back
-                            </button>
-                            <button type="button" class="btn btn-primary float-end mt-5" data-kt-stepper-action="next">
-                                Continue
-                            </button>
-                        </div>
+                        <button type="button" class="btn btn-primary float-end mt-5" data-kt-stepper-action="next">
+                            Continue
+                        </button>
                     </div>
                 </div>
             </div>
@@ -518,7 +497,6 @@
     </div>
 </section>
 <!-- #End -->
-<script src="./js/validate.js"></script>
 <script src="./js/scripts.bundle.js"></script>
 <script src="./js/custom.js"></script>
 <script src="./js/core.js"></script>

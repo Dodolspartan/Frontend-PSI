@@ -10,7 +10,7 @@
     --biru-s: #94D6FF;
     --orange-c: #FFEDD5;
     --hijau-b: #DCFCE7;
-    --orange-i: #f974167a;
+    --orange-i: #FFF7ED;
     --white-b-d: #FAFAFA;
     --danger-bg: #FEE2E2;
     --text-danger: #EF4444;
@@ -253,7 +253,7 @@
 .Element-fitur-sipol .row .card-fitur-sipool-items .col-1 {
     float: right;
     background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
-    width: 200px;
+    width: 210px;
     height: 200px;
 }
 
@@ -267,7 +267,7 @@
 
 .Element-fitur-sipol .row .card-fitur-sipool-danger .col-1 {
     background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
-    width: 200px;
+    width: 210px;
     height: 200px;
     background-image: cover;
     object-fit: contain;
@@ -382,7 +382,7 @@
 }
 
 .Element-application-jobs .title-heading h1 {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .Element-application-jobs .element-items-card .row .card-body {
@@ -531,15 +531,12 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.Elemenet-they-said .mySwiper .swiper-button-next {
-    left: calc(50%-10px);
-    color: var(--orange-i);
+.Elemenet-they-said .swiper-slide .swiper-button-prev {
+    display: block;
 }
 
 
@@ -548,15 +545,42 @@
     background-color: var(--white-b-d);
 }
 
+.wrapper-content .row .tab-content-items {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.wrapper-content .row .deskripsi-pekerjaan span {
+    font-size: 14px;
+}
+
 .wrapper-content .row .wrapper-content-left {
     border-radius: 16px;
 }
 
-.wrapper-content .row .tab-content-items h6 {
-    font-size: 16px;
+.wrapper-content .row .wrapper-content-left .text-small {
+    font-size: 14px;
+}
+
+.wrapper-content .row .col-6 span {
+    font-size: 12px;
+}
+
+.wrapper-content .row .tab-content-items .col-6 h6 {
+    font-size: 15px;
+}
+
+.wrapper-content .row .tab-content-items span {
+    font-size: 12px;
+}
+
+.wrapper-content .wrapper-content-left {
+    padding: 25px 30px;
 }
 
 .wrapper-content-left .nav-tabs .nav-link {
+    font-size: 12px;
     color: var(--biru-d);
 }
 
@@ -564,10 +588,15 @@
     padding: 12px;
     outline: none;
     border: none;
+    font-weight: bold;
     background-color: var(--orange-i);
     border-radius: 1px;
     border-bottom: var(--orange);
     color: var(--orange);
+}
+
+.nav .nav-tabs.active {
+    border: 1px solid var(--orange);
 }
 
 .wrapper-content-left .nav-tabs.active {
@@ -601,6 +630,7 @@
 .nav-tabs .nav-link.active {
     background-color: none;
     background: #F97316;
+    border-bottom: 1px solid var(--orange-i);
 }
 
 .wrapper-content .row .col-6 .nav-tabs .tab-pane {
@@ -609,16 +639,24 @@
 
 .wrapper-content .row .wrapper-content-left .benefit-pekerjaan .card-item {
     padding: 8px;
+    align-items: center;
     background-color: var(--hijau-b);
     border-radius: 8px;
     color: var(--text-green);
+    font-size: small;
+}
+
+.wrapper-content .row .wrapper-content-left .benefit-pekerjaan .card-item span {
+    font-size: 12px;
 }
 
 .wrapper-content .row .wrapper-content-left .deskripsi-pekerjaan .card-item {
     padding: 8px;
+    align-items: center;
     background-color: var(--orange-i);
     border-radius: 8px;
     color: var(--orange);
+    font-size: small;
 }
 
 .wrapper-content .content-warning {
@@ -627,6 +665,7 @@
     background-color: var(--danger-bg);
     color: var(--text-danger);
     border-radius: 16px;
+    font-size: small;
 }
 
 .wrapper-content .col-4 .wrapper-content-right {
@@ -647,7 +686,10 @@
 .wrapper-content .col-4 .wrapper-content-right .salary-items {
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.wrapper-content .col-4 .wrapper-content-right .salary-items h6 {
+    font-size: 12px;
 }
 
 .wrapper-content .col-4 .wrapper-content-right .salary-items span {
@@ -655,11 +697,12 @@
     padding: 5px;
     background: var(--text-w);
     color: var(--orange);
+    font-size: 12px;
     border-radius: 8px;
 }
 
 .wrapper-content .col-4 .wrapper-content-right .text-information span {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400px;
     color: var(--text-w);
 }
@@ -676,12 +719,35 @@
     color: var(--biru-d);
 }
 
+/* Wrapper Detail Pekerjaan */
+.wrapper-detail-pekerjaan .wrapper-content-detail h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.wrapper-detail-pekerjaan .wrapper-content-detail img {
+    width: 40px;
+    height: 40px;
+}
+
 /* Wrapper Register Sipool */
-.wrapper-register-sipol .element-action .row .col-6 button {
+.wrapper-register-sipol {
     width: 100%;
     border: none;
-    padding: 8px 0;
-    border-radius: 8px;
+}
+
+.wrapper-register-sipol .form {
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.wrapper-register-sipol .content-from-action {
+    float: right;
+    width: 800px;
 }
 
 /* Detail Jobs Information */
@@ -705,7 +771,9 @@
 }
 
 .Element-information-jobs .row .card-items-bagde {
+    display: flex;
     padding: 8px;
+    align-items: center;
     margin: 0 12px;
     background-color: var(--hijau-b);
     border-radius: 8px;
@@ -722,6 +790,11 @@
     align-content: center;
     gap: 10px;
     float: right;
+}
+
+.Element-information-jobs .row .element-detail-date span {
+    font-size: small;
+    align-items: center;
 }
 
 .Element-information-jobs .row .col-4 .element-detail-share input {
@@ -742,6 +815,7 @@
     padding: 8px;
     background: var(--text-w);
     border-radius: 8px;
+    font-size: 12px;
 }
 
 /* Wrapper Register Sipool */
@@ -752,14 +826,13 @@
 }
 
 .wrapper-register-sipol .container {
-    padding: 20px;
+    padding: 20px 30px;
     background-color: var(--text-w);
     border-radius: 16px;
 }
 
 /* Footer */
 .Element-footer {
-    margin-top: 56px;
     min-height: 350px;
     background-color: var(--biru-d);
 }
@@ -875,6 +948,8 @@
         position: relative;
         margin-left: 130px;
         background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
+        object-fit: cover;
+        left: -900px;
     }
 
     .Element-fitur-sipol .row .col-8 {
@@ -885,7 +960,9 @@
         position: relative;
         margin-left: 130px;
         background-image: url("../assets/image/Mobile-App-Placeholder-2\ \(1\).png");
+        object-fit: cover;
     }
+
 
     /* Element-about-sipol */
     .Element-about-sipol {
@@ -950,11 +1027,45 @@
     }
 
     .Element-application-jobs .container .row .col-3 {
-        width: 350px;
+        display: block;
+        padding: 0 20px;
+        width: 390px;
     }
 
     .Element-application-jobs .title-heading h1 {
         font-size: 23px;
+    }
+
+    .Element-application-jobs .element-search-items .row {
+        display: grid;
+        width: 100%;
+        padding: 26px 0;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    /* Wrapper Sipol Register */
+    .wrapper-register-sipol {
+        padding: 20px;
+    }
+
+    .wrapper-register-sipol .content-from-action {
+        float: right;
+        width: 100%;
+    }
+
+    .wrapper-register-sipol .form {
+        padding: 20px 10px;
+        overflow: hidden;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    /* Wrapper Content */
+    .wrapper-content .col-4 {
+        width: 350px;
     }
 
     /* Elemenet-they-said */
@@ -984,17 +1095,92 @@
     .wrapper-content .row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .wrapper-content-left .nav-tabs .nav-link {
+        font-size: 8px;
+    }
+
+    .wrapper-content .row .col-8 {
+        width: 100%;
+    }
+
+    .wrapper-content .wrapper-content-left .tab-content .col-6 {
+        width: 100%;
+    }
+
+    .wrapper-content-left .nav-tabs .nav-link.active {
+        padding: 7px;
+    }
+
+    .wrapper-content .wrapper-content-left {
+        padding: 18px;
+    }
+
+    .wrapper-content .row .wrapper-content-left .benefit-pekerjaan {
+        display: block;
+    }
+
+    .wrapper-content .row .wrapper-content-left .benefit-pekerjaan .card-item {
+        padding: 4px 6px;
+    }
+
+    .wrapper-content .row .wrapper-content-left .benefit-pekerjaan .card-item span {
+        font-size: 7px;
+    }
+
+    /* Detail Pekerjaan */
+    .wrapper-detail-pekerjaan .wrapper-content-detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper-detail-pekerjaan .wrapper-content-detail h2 {
+        font-size: 16px;
+        align-items: center;
     }
 
     /* Wrapper Information */
     .Element-information-jobs .container .row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        border-radius: 1px;
+    }
+
+    .Element-information-jobs .container .row .col-8 {
+        width: 100%;
+    }
+
+    .Element-information-jobs .container .row .col-4 {
+        display: flex;
+        width: 100%;
+    }
+
+    .Element-information-jobs .row .element-detail-date span {
+        font-size: 10px;
+    }
+
+    .Element-information-jobs .row .col-4 .element-detail-share input {
+        font-size: 12px;
+    }
+
+    .Element-information-jobs .row .col-4 .element-detail-share span {
+        font-size: 12px;
+    }
+
+    .Element-information-jobs .row .col-4 .element-detail-share svg {
+        width: 10px;
+    }
+
+    .Element-information-jobs .row .card-items-bagde {
+        padding: 4px;
     }
 
     /* Element Footer */
     .Element-footer {
-        padding: 20px 0px;
+        min-height: 100%;
     }
 
     .Element-footer .container .row {
