@@ -613,13 +613,18 @@
     border-radius: 16px;
 }
 
+.wrapper-content .row .col-4 .wrapper-content-right .items-negara .col {
+    padding-left: 20px;
+}
+
 .wrapper-content .row .col-4 .wrapper-content-right .items-negara h6 {
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 5px;
     font-weight: 600;
 }
 
 .wrapper-content .row .col-4 .wrapper-content-right .items-negara span {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .wrapper-content .nav-tabs.active {
@@ -669,7 +674,7 @@
 }
 
 .wrapper-content .col-4 .wrapper-content-right {
-    padding: 20px;
+    padding: 15px;
 }
 
 .wrapper-content .col-4 .wrapper-content-right .wrapper-image img {
@@ -686,10 +691,13 @@
 .wrapper-content .col-4 .wrapper-content-right .salary-items {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .wrapper-content .col-4 .wrapper-content-right .salary-items h6 {
-    font-size: 12px;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 5px;
 }
 
 .wrapper-content .col-4 .wrapper-content-right .salary-items span {
