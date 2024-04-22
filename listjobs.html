@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Jobs</title>
+    <!-- Css Style -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Bootstarp 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.2.0/dist/css/fastbootstrap.min.css" rel="stylesheet"
+        integrity="sha256-V6lu+OdYNKTKTsVFBuQsyIlDiRWiOmtC8VQ8Lzdm2i4=" crossorigin="anonymous">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- All CSS -->
+    <link rel="stylesheet" href="./css/css2">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
+    <!--<link rel="stylesheet" href="css/jquery-ui.css" />-->
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/select2.min.css">
+    <link rel="stylesheet" href="./css/select2-bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/meanmenu.css">
+    <link rel="stylesheet" href="./css/spacing.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/timeline-tab.css">
+    <link rel="stylesheet" href="./modern-normalize.min.css">
+    <link rel="stylesheet" href="./bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="./css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.bundle.css">
+    <style>
+        .stepper.stepper-pills.stepper-column .stepper-line {
+            position: unset !important;
+            transform: unset !important;
+        }
+    </style>
+    <!-- All Javascripts -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-datepicker.min.js"></script>
+    <!--<script src="js/jquery-ui.js"></script>-->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/select2.full.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/jquery.meanmenu.js"></script>
+    <script src="./js/timeline-tab.js"></script>
+
+    <script src="./js/"></script>
+    <script src="./js/jquery-1.12.0.min.js"></script>
+    <script src="./js/bootstrap.min(1).js"></script>
+</head>
+
+<!-- Navbar -->
+<section class="Element-nav-items-search">
+    <div class="container">
+        <!-- Navbar Navigation -->
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <img src="./assets/logo/logo.png" alt="">
+                    <a class="navbar-brand text-white fw-semibold mt-2 col-sm-hidden">PT. PUTRA SAHABAT
+                        INTERNATIONAL</a>
+                </div>
+                <div class="d-flex">
+                    <a href="#" class="link-pages">Worker</a>
+                    <a href="#" class="link-pages">Employer</a>
+                    <a href="register.html" class="link-btn fw-semibold">Daftar SIPOOL</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+<!-- #End -->
+
+<!-- List Jobs Search -->
+<div class="list-jobs-search">
+    <div class="container">
+        <!-- Content Search -->
+        <div class="search-items-jobs">
+            <div class="search-input-items">
+                <input class="form-control form-control-lg" type="text" placeholder="Masukkan kata kunci"
+                    aria-label=".form-control-lg example">
+            </div>
+            <div class="search-input-items">
+                <select class="form-select form-select-lg" aria-label="Default select example">
+                    <option selected>Semua Klasifikasi</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+            </div>
+            <div class="search-input-items">
+                <input class="form-control form-control-lg" type="text"
+                    placeholder="Masukkan pinggiran kota, kota, atau wilayah" aria-label=".form-control-lg example">
+            </div>
+            <div class="search-input-items">
+                <button type="submit" class="btn btn-primary">Cari</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #End -->
+<!-- Content Search Jobs -->
+<section class="Content-search-all-jobs">
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-12 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-10 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-10 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-12 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-10 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-10 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-12 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-10 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-10 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-12 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-10 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <div class="card-image">
+                        <img src="./assets/image/Picture (1).png" alt="">
+                    </div>
+                    <div class="card-items-bagde gap-1">
+                        <img src="./assets/icons/stop-circle.svg" alt="">
+                        <span>Tersedia</span>
+                    </div>
+                    <div class="card-title-heading-card">
+                        <h5 class="col-10 text-truncate">General Manager Operation</h5>
+                        <span>ALDI</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/image/location.png" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Negara</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/document-text.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Kontrak Kerja</h6>
+                                <p>Full Time</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <img src="./assets/icons/Component 1.svg" alt="">
+                            </div>
+                            <div class="col-11 mt-2">
+                                <h6 class="title-heading fw-bold">Gaji</h6>
+                                <p>$19.50 - $30.00 per jam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Berakhir pada tanggal 1 Februari 2024</h6>
+                            </div>
+                            <div class="col-12 d-flex align-self-center mt-2">
+                                <a href="">Lihat Detail <span><svg xmlns="http://www.w3.org/2000/svg" clas="" width="16"
+                                            height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z">
+                                            </path>
+                                        </svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<!-- #End -->
+<!-- Pagination -->
+<div class="container mt-5 mb-5">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!--end-->
+<!-- Footer -->
+<div class="Element-footer">
+    <div class="container">
+        <div class="row gap-4">
+            <div class="col">
+                <div class="d-flex">
+                    <img src="./assets/logo/logo.png" alt="">
+                    <a class="navbar-brand text-white fw-semibold mt-2 col-sm-hidden">PT. PUTRA SAHABAT
+                        INTERNATIONAL</a>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <h5 class="text-white fw-bold">Produk & Layanan</h5>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-white">Worker</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-white">Employer</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5 class="text-white fw-bold">Perusahaan</h5>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-white">Tentang Kami</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-white">Alamat Kami</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-white">FAQ</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-white">Galeri</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5 class="text-white fw-bold">Lainnya</h5>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-white">Kebijakan Privasi</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-white">Syarat & Ketentuan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="d-flex flex-column col-sm-12 flex-sm-row justify-content-between pt-4 border-top text-white text-center">
+            <p>PT. Sahabat Putra International@2024. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis text-white" href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis text-white" href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis text-white" href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis text-white" href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+<!-- #End -->
+<script src="./js/validate.js"></script>
+<script src="./js/scripts.bundle.js"></script>
+<script src="./js/custom.js"></script>
+<script src="./js/core.js"></script>
+<script type="text/javascript" src="./js/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap-datetimepicker.min.js"></script>
+<script src="./js/moment-duration-format.min.js"
+    integrity="sha512-ej3mVbjyGQoZGS3JkES4ewdpjD8UBxHRGW+MN5j7lg3aGQ0k170sFCj5QJVCFghZRCio7DEmyi+8/HAwmwWWiA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./scripts.bundle.js"></script>
+<script src="./stepper.js"></script>
+
+
+</body>
+
+</html>
