@@ -759,13 +759,18 @@
 }
 
 /* List Jobs Search  */
+.list-jobs-search {
+    display: flex;
+    min-height: 50vh;
+    align-items: end;
+}
+
 .list-jobs-search .container .search-items-jobs {
     display: flex;
     justify-content: space-between;
     padding: 46px 110px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--biru-b);
+    justify-content: bottom;
+    background-color: var(--biru-d);
     border-radius: 16px;
 }
 
@@ -774,11 +779,12 @@
 }
 
 .list-jobs-search .container .search-items-jobs input {
-    border: none;
+    border: 2px solid var(--biru-b);
 }
 
 .list-jobs-search .container .search-items-jobs select {
-    border: none;
+    color: #4b5675;
+    border: 2px solid var(--biru-b);
 }
 
 /* Navbar Search Jobs */
@@ -822,13 +828,6 @@
 
 }
 
-/* List Jobs Search */
-.list-jobs-search {
-    display: flex;
-    min-height: 50vh;
-    align-items: center;
-}
-
 /* Content Search Jobs */
 .Content-search-all-jobs {
     padding: 26px 0;
@@ -851,6 +850,34 @@
 
 .Content-search-all-jobs .row .col .card-body .card-image img {
     width: 100%;
+}
+
+.Content-search-all-jobs .row .card-body {
+    padding: 12px;
+    border: 1px solid var(--biru-b);
+    border-radius: 16px;
+}
+
+.Content-search-all-jobs .row .card-body:hover {
+    box-shadow: 0px 10px 35px -3px rgba(0, 0, 0, 0.055);
+    border: 2px solid var(--biru-b);
+}
+
+.Content-search-all-jobs .row .card-body .card-items-bagde {
+    display: flex;
+    padding: 8px 4px;
+    margin: 20px 0px 10px 0px;
+    background-color: var(--hijau-b);
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.Content-search-all-jobs .row .card-body .card-content .col-12 a {
+    font-weight: bold;
+    color: var(--orange);
+    text-decoration: none;
 }
 
 /* Detail Jobs Information */
@@ -923,7 +950,7 @@
 
 /* Wrapper Register Sipool */
 .wrapper-register-sipol {
-    min-height: 100vh;
+    min-height: 140vh;
     background-color: var(--bg-gray);
     padding: 150px 0;
 }
@@ -1149,6 +1176,7 @@
 
     /* Wrapper Sipol Register */
     .wrapper-register-sipol {
+        min-height: 100vh;
         padding: 20px;
     }
 
