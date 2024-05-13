@@ -444,13 +444,10 @@
 }
 
 .Element-application-jobs .element-items-card .row .card-body .card-content .col-12 a:hover {
-    padding: 4px 8px;
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--text-w);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--biru-d);
     text-decoration: none;
-    background-color: var(--orange);
-    border-radius: 4px;
 }
 
 .Element-application-jobs .element-search-items .row {
@@ -538,6 +535,20 @@
 .find-jobs .element-items-card .row .card-body .card-content .col-12 h6 {
     font-size: 12px;
     font-weight: 300;
+}
+
+.find-jobs .element-items-card .row .card-body .card-content .col-12 a {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.find-jobs .element-items-card .row .card-body .card-content .col-12 a:hover {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--biru-d);
+    text-decoration: none;
 }
 
 /* Section they said */
@@ -799,7 +810,7 @@
 /* List Jobs Search  */
 .list-jobs-search {
     display: flex;
-    min-height: 60vh;
+    min-height: 45vh;
     align-items: end;
 }
 
@@ -1071,7 +1082,7 @@
 
     }
 
-    .Element-nav-items .navbar .navbar-brand {
+    .Element-nav-items .navbar .navbar-brand p {
         display: none;
     }
 
@@ -1323,7 +1334,7 @@
 
     .find-jobs .element-items-card .row .card-body:hover {
         box-shadow: rgba(0, 0, 0, 0.055) 0px 10px 35px -3px;
-        border: 2px solid var(--biru-b);
+        border: 3px solid var(--biru-b);
     }
 
     .find-jobs .element-items-card .row .card-body .card-image img {
@@ -1348,6 +1359,20 @@
 
     .find-jobs .element-items-card .row .card-body .card-content .col-10 p {
         font-size: 10px;
+    }
+
+    .find-jobs .element-items-card .row .card-body .card-content .col-12 a {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--orange);
+        text-decoration: none;
+    }
+
+    .find-jobs .element-items-card .row .card-body .card-content .col-12 a:hover {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--biru-d);
+        text-decoration: none;
     }
 
     /* Elemenet-they-said */
@@ -1511,14 +1536,14 @@
     /* List Jobs Search  */
     .list-jobs-search {
         display: flex;
-        min-height: 70vh;
+        min-height: 60vh;
         align-items: end;
     }
 
     .list-jobs-search .container {
         display: grid;
         margin: 0 20px;
-        padding: 30px 15px;
+        padding: 30px 10px;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
@@ -1542,6 +1567,8 @@
     /* Element Footer */
     .Element-footer {
         min-height: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .Element-footer .container .row {
