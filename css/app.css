@@ -810,7 +810,7 @@
 /* List Jobs Search  */
 .list-jobs-search {
     display: flex;
-    min-height: 45vh;
+    min-height: 40vh;
     align-items: end;
 }
 
@@ -1059,7 +1059,7 @@
 
     /* Navbar Mobile */
     .Element-nav-items {
-        min-height: 50vh;
+        min-height: 10vh;
     }
 
     .Element-nav-items .navbar {
@@ -1082,7 +1082,7 @@
 
     }
 
-    .Element-nav-items .navbar .navbar-brand p {
+    .Element-nav-items .navbar .navbar-brand {
         display: none;
     }
 
@@ -1094,13 +1094,13 @@
     }
 
     .Element-nav-items .navbar .link-btn {
-        padding: 12px 7px;
+        padding: 12px 5px;
         background: var(--orange);
         text-decoration: none;
         color: var(--text-w);
         opacity: 100%;
         border-radius: 8px;
-        font-size: 12px;
+        font-size: 10px;
 
     }
 
@@ -1322,7 +1322,7 @@
 
 
     .find-jobs .element-items-card .row .col-3 {
-        width: 50%;
+        width: 45%;
         margin: 10px 0;
     }
 
@@ -1571,8 +1571,16 @@
         padding: 0;
     }
 
+    .Element-footer .container {
+        padding: 20px 0;
+    }
+
+    .Element-footer .container .row .col .navbar-brand {
+        font-size: 15px;
+    }
+
     .Element-footer .container .row {
-        padding: 20px;
+        padding: 20px 20px 10px 10px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
