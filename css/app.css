@@ -3,6 +3,7 @@
 :root {
     --orange: #F97316;
     --biru-d: #00314F;
+    --biru-bg:#0F5078;
     --biru-n: #00314fb4;
     --bg-gray: #F5F5F5;
     --bg-src: #ECF7FF;
@@ -381,6 +382,8 @@
 .Element-application-jobs {
     padding: 56px 0;
     min-height: 964px;
+    background-image: url('../assets/image/image-background.png');
+    background-size: cover;
 }
 
 .Element-application-jobs .title-heading h1 {
@@ -389,8 +392,10 @@
 
 .Element-application-jobs .element-items-card .row .card-body {
     padding: 12px;
-    border: 1px solid var(--biru-b);
+    background: var(--text-w);
+    border: 2px solid var(--biru-b);
     border-radius: 16px;
+    box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.055);
 }
 
 .Element-application-jobs .element-items-card .row .card-body .card-image img {
@@ -554,11 +559,12 @@
 /* Section they said */
 .Elemenet-they-said {
     margin: auto;
-    width: 70%;
+    background-color: var(--biru-b);
 }
 
 .Elemenet-they-said .container .mySwiper {
     padding: 56px 0;
+    width: 70%;
 }
 
 .Elemenet-they-said .container .mySwiper .swiper-items {
@@ -657,7 +663,8 @@
 }
 
 .wrapper-content .row .col-4 .wrapper-content-right {
-    background-color: var(--biru-d);
+    background-color: var(--biru-bg
+    );
     min-height: 765px;
     border-radius: 16px;
 }
@@ -985,7 +992,7 @@
 
 .Element-information-jobs .row .card-items-bagde {
     display: flex;
-    padding: 8px;
+    padding: 5px;
     align-items: center;
     margin: 0 12px;
     background-color: var(--hijau-b);
@@ -997,11 +1004,11 @@
     align-items: center;
 }
 
-.Element-information-jobs .row .col-4 .element-detail-share {
+.Element-information-jobs .row .col-6 .element-detail-share {
     display: flex;
     align-items: center;
     align-content: center;
-    gap: 10px;
+    gap: 5px;
     float: right;
 }
 
@@ -1010,21 +1017,21 @@
     align-items: center;
 }
 
-.Element-information-jobs .row .col-4 .element-detail-share input {
+.Element-information-jobs .row .col-6 .element-detail-share input {
     border: none;
 }
 
-.Element-information-jobs .row .col-4 .element-detail-share input:focus {
+.Element-information-jobs .row .col-6 .element-detail-share input:focus {
     outline: none;
 }
 
 
-.Element-information-jobs .row .col-4 .element-detail-share button {
+.Element-information-jobs .row .col-6 .element-detail-share button {
     border: none;
     background: none;
 }
 
-.Element-information-jobs .row .col-4 .element-detail-share .clipboard-copy {
+.Element-information-jobs .row .col-6 .element-detail-share .clipboard-copy {
     padding: 8px;
     background: var(--text-w);
     border-radius: 8px;
