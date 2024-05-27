@@ -3,7 +3,7 @@
 :root {
     --orange: #F97316;
     --biru-d: #00314F;
-    --biru-bg:#0F5078;
+    --biru-bg: #0F5078;
     --biru-n: #00314fb4;
     --bg-gray: #F5F5F5;
     --bg-src: #ECF7FF;
@@ -18,7 +18,7 @@
     --text-danger: #EF4444;
     --text-green: #22C55E;
     --text-paraf: #BBBBBB;
-    --border-sl:#D4D4D4;
+    --border-sl: #D4D4D4;
 }
 
 * {
@@ -388,6 +388,7 @@
 }
 
 .Element-application-jobs .title-heading h1 {
+    color: var(--biru-d);
     font-size: 40px;
 }
 
@@ -577,9 +578,11 @@
 .Elemenet-they-said .container .mySwiper .swiper-items .swiper-image img {
     padding: 0 20px;
 }
-.Elemenet-they-said .container .mySwiper .swiper-button-prev{
-  display: none;
+
+.Elemenet-they-said .container .mySwiper .swiper-button-prev {
+    display: none;
 }
+
 .Elemenet-they-said .swiper-container {
     width: 100%;
     height: 100%;
@@ -612,9 +615,12 @@
 .wrapper-content .row .deskripsi-pekerjaan span {
     font-size: 14px;
 }
-.wrapper-content .nav-item.show .nav-tabs .nav-link::after, .nav-tabs .nav-link.active::after{
+
+.wrapper-content .nav-item.show .nav-tabs .nav-link::after,
+.nav-tabs .nav-link.active::after {
     background-color: var(--orange);
 }
+
 .wrapper-content .row .wrapper-content-left {
     border-radius: 16px;
 }
@@ -668,8 +674,7 @@
 }
 
 .wrapper-content .row .col-4 .wrapper-content-right {
-    background-color: var(--biru-bg
-    );
+    background-color: var(--biru-bg);
     min-height: 765px;
     border-radius: 16px;
 }
@@ -760,10 +765,12 @@
     align-items: center;
     margin-top: 5px;
 }
-.hr{
+
+.hr {
     margin: 20px 0;
     border: 1px dashed var(--border-sl);
 }
+
 .wrapper-content .col-4 .wrapper-content-right .salary-items span {
     margin-left: 5px;
     padding: 5px;
@@ -1236,6 +1243,30 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: auto;
+    }
+
+    .Element-application-jobs .element-search-items .col-2 {
+        width: 100%;
+    }
+
+    .Element-application-jobs .element-search-items .col-2 button {
+        padding: 10px 30px;
+        background-color: var(--orange);
+        font-weight: 600;
+        width: 100%;
+        text-decoration: none;
+        border-radius: 8px;
+        color: var(--text-w);
+        border: none;
+    }
+
+    .Element-application-jobs .element-search-items .col-2 button:hover {
+        font-weight: 600;
+        background: none;
+        border: 1px solid var(--orange);
+        color: var(--orange);
+        transition: 1s;
     }
 
     .Element-application-jobs .container .row {
